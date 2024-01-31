@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    cout<<"Enter any character"<<endl;
+    char char1;
+    cin>>char1;
+    
+    if (char1>='a' && char1<='z')
+    {
+        cout<<char1<<" is lowercase"<<endl;
+    }
+    else if(char1>='A'&& char1<='Z')
+    {
+        cout<<char1<<"is uppercase"<<endl;
+    }
+    return 0;
+}
