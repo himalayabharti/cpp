@@ -1,0 +1,27 @@
+//series=1-2+3-4+5..............upto n terms 
+#include<iostream>
+using namespace std;
+
+int main(){
+	int n,even_sum,odd_sum,sum=0;
+	
+	cout<<"Enter the nth term to find the sum : ";
+	cin>>n;
+	
+	
+	
+	for (int i=1;i<=n;++i){
+		
+		if (i%2!=0)
+		{
+			odd_sum+=i;
+		}
+		else{
+			even_sum+=i;
+		}
+					
+		
+	}
+	sum=-even_sum+odd_sum+(-1);
+	cout<<sum<<endl;
+}
